@@ -2,6 +2,21 @@
     display: flex;
     flex-direction: column;
 
+    .whatsappButton {
+        position: fixed;
+        right: 40px;
+        bottom: 30px;
+        z-index: 100;
+
+        animation: riseUpTitle 2s;
+
+        transition: transform 0.2s ease-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
     .mainItemWrapper1,
     .mainItemWrapper2 {
         position: relative;
@@ -84,6 +99,8 @@
 
             h1 {
                 font-size: 38px;
+                animation: riseUpTitle 1s;
+                animation-delay: 1s;
             }
     
             small {

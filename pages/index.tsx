@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Image from 'next/image';
 import { AiOutlineDoubleRight } from 'react-icons/ai';
 import Map, { Marker } from 'react-map-gl';
+import Link from 'next/link';
 
 const Home = () => {
   return (
@@ -15,6 +16,11 @@ const Home = () => {
 
       <Header />
       <div className={styles.container}>
+          <Link href="https://wa.me/5521967083336">
+            <a className={styles.whatsappButton} target={'_blank'}>
+                <Image src="/whatsappLogo.svg" width={60} height={60} alt="Whatsapp" />
+            </a>
+          </Link>
           <div className={styles.mainItemWrapper1}>
             <div className={styles.mainItem1}>
               <div className={styles.mainItemTitle}>
