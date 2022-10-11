@@ -1,0 +1,71 @@
+.mainFooter {
+    color: #fff;
+
+    .mainFooterContent {
+        background-color: #222;
+        height: 300px;
+        padding: 50px 200px;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+        
+    
+        .footerItem {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: left;
+    
+            .socialMedia {
+                width: 150px;
+                font-size: 24px;
+    
+                display: flex;
+                gap: 16px;
+
+                svg {
+                    transition: 0.2s ease;
+
+                    &:hover {
+                        scale: 1.1;
+                    }
+                }
+            }
+
+            .footerMenu {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+    
+            .contactMethod {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+
+    .copyAndCredits {
+        background-color: #333;
+        padding: 20px 200px;
+        text-align: center;
+        font-size: 14px;
+        
+        display: flex;
+        justify-content: space-between;
+
+        .devInfo {
+            display: flex;
+            gap: 4px;
+
+            .devInfoLink {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+            }
+        }
+    }
+    
+}

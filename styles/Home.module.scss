@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .mainItemWrapper1,
+    .mainItemWrapper2 {
+        position: relative;
+        width: 100%;
+        height: 50rem;
+
+        .mainItem1,
+        .mainItem2 {
+            position: absolute;
+            padding: 30px;
+           
+            color: #fff;
+            background: rgba(0,0,0,0.35);
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: right;
+            text-align: right;
+
+            .mainItemTitle {
+                height: 156px;
+                position: relative;
+
+                h1 {
+                    opacity: 0;
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                    animation: riseUpTitle 1s ease-in-out 0.2s 1 normal forwards;
+                }
+    
+                p {
+                    position: absolute;
+                    opacity: 0;
+                    font-size: 18px;
+                    animation: riseUpSubtitle 1s ease 1s 1 normal forwards;
+    
+                    svg {
+                        margin-bottom: -3px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mainItemWrapper1 {
+        background: url('/content1.webp');
+
+        .mainItem1 {
+            right: 0;
+
+            p {
+                right: 0;
+            }
+        }
+    }
+
+    .mainItemWrapper2 {
+        background: url('/content2.webp');
+
+        .mainItem2 {
+            left: 0;
+        }
+    }
+
+    .brands {
+        width: 1170px;
+        min-height: 146px;
+        margin: 0 auto;
+        padding: 300px 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .brandsTitleWrapper {
+            padding-bottom: 50px;
+
+            h1 {
+                font-size: 38px;
+            }
+    
+            small {
+                font-size: 16px;
+            }
+        }
+
+        
+        .brandLogo {
+            filter: contrast(0.4) brightness(1.5) saturate(0);
+            transition: filter 0.2s;
+            &:hover {
+                filter: none;
+            }
+        }
+    }
+
+    .mapWrapper {
+        width: 100%;
+        background-color: #75b83f;
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            .addressWrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                justify-content: center;
+                font-size: 20px;
+
+                h1 {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+       
+    }
+}
+
+@keyframes riseUpTitle {
+    from {
+        opacity: 0;
+        margin-top: 40px;
+    } to {
+        opacity: 100%;
+        margin-top: 0;
+    }
+}
+
+@keyframes riseUpSubtitle {
+    from {
+        opacity: 0;
+        margin-top: 20px;
+    } to {
+        opacity: 100%;
+        margin-top: 0;
+    }
+}
