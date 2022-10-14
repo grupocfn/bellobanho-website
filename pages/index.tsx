@@ -25,7 +25,7 @@ const Home = () => {
       <div className={styles.container}>
           <Link href="https://wa.me/5521967083336">
             <a className={styles.whatsappButton} target={'_blank'}>
-                <Image src="/whatsappLogo.svg" width={60} height={60} alt="Whatsapp" />
+                <Image src="/whatsappLogo.svg" width={40} height={40} alt="Whatsapp" />
             </a>
           </Link>
           <div className={styles.mainItemWrapper1}>

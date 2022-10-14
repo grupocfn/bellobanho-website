@@ -62,7 +62,7 @@ export default function Footer() {
             <div className={styles.copyAndCredits}>
                 <span>&copy; 2022 Banho Bello Distribuidora e Materiais de Construção Ltda.</span>
                 <span className={styles.devInfo}>
-                    Site desenvolvido por <Link href="#"><a aria-label="Leonardo Meira" /*target='_blank' ref={`noreferrer`}*/><strong className={styles.devInfoLink}>Leonardo Meira <FaExternalLinkAlt /></strong></a></Link>
+                    Site desenvolvido por <Link href="https://github.com/leonardomeira"><a aria-label="Leonardo Meira" target='_blank' ref={`noreferrer`}><strong className={styles.devInfoLink}>Leonardo Meira <FaExternalLinkAlt /></strong></a></Link>
                 </span> 
             </div>
             

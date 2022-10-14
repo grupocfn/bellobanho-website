@@ -6,8 +6,8 @@ export default function Header() {
     return (
         <header className={styles.mainHeader}>
             <Link href="/">
-                <a aria-label="Home">
-                    <Image width={180} height={32.031} src="/logo.png" alt="Logo" />
+                <a className={styles.logoHomeLink} aria-label="Home">
+                    <div className={styles.logo} />
                 </a>
             </Link>
 

@@ -1,4 +1,5 @@
 .mainFooter {
+    z-index: 10;
     color: #fff;
 
     .mainFooterContent {
@@ -67,5 +68,52 @@
             }
         }
     }
-    
+}
+
+@media screen and (max-width: 1280px) {
+    .mainFooter {
+        .mainFooterContent {
+            font-size: 14px;
+            padding: 50px;
+        }   
+
+        .copyAndCredits {
+            padding: 20px 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainFooter {
+        .mainFooterContent {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            padding: 20px;
+
+            .footerItem {
+                gap: 8px;
+                padding: 30px 0;
+
+                .socialMedia {
+                    margin-top: 8px;
+                    gap: 8px;
+                }
+
+                .footerMenu, .contactMethod {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                }
+            }
+        }   
+
+        .copyAndCredits {
+            padding: 20px 40px;
+            font-size: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
