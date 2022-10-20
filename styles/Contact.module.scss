@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, rgb(92, 146, 90), #1a6132);
+    color: #fff;
+    padding: 70px 100px;
+
+    .contactTitle {
+        padding: 0 0 40px 0;
+        h1 {
+            font-size: 40px;
+        }
+    
+        span {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 400;
+            gap: 6px;
+        }
+    }
+
+   
+
+    .serviceChannels {
+        max-width: 1200px;
+        margin: 0 auto;
+        min-height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+
+        .serviceChannel {
+            color: inherit;
+            height: 200px;
+            padding: 12px 30px;
+            border-radius: 16px;
+            background-color: rgba(0, 0, 0, 0.2);
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            transition: transform 0.3s ease, background-color 0.3s ease, letter-spacing 0.3s ease;
+
+            .cardTitle {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                
+                h2 {
+                    transition: letter-spacing 0.3s ease;
+                }
+
+                svg {
+                    font-size: 20px;
+                }
+               
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            span {
+                font-weight: 600;
+
+                
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px
+                }
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: rgba(0, 0, 0, 0.35);
+                letter-spacing: 0.5px;
+
+                h2 {
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 20px;
+        .contactTitle {
+            padding: 0 0 40px 0;
+            h1 {
+                font-size: 24px;
+            }
+        
+            span {
+                font-size: 16px;
+            }
+        }
+
+        .serviceChannels {
+            display: flex;
+            flex-direction: column;
+            gap: 30px
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        .contactTitle {
+            padding: 0;
+            span {
+                padding: 20px 0;
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .mainFooter {
     z-index: 10;
-    color: #fff;
+    color: #ccc;
 
     .mainFooterContent {
         background-color: #222;
@@ -34,6 +34,13 @@
                 }
             }
 
+            .columnDirDiv {
+                max-width: 250px;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
             .footerMenu {
                 display: flex;
                 flex-direction: column;
@@ -62,6 +69,7 @@
             gap: 4px;
 
             .devInfoLink {
+                color: #fff;
                 display: flex;
                 gap: 4px;
                 align-items: center;

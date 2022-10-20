@@ -21,28 +21,22 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className={styles.footerItem}>
-                    <strong>Menu</strong>
-                    <div className={styles.footerMenu}>
-                        <Link href="/">
-                            <a aria-label="Home">Home</a>
-                        </Link>
-                        <Link href="#">
-                            <a aria-label="Catálogo">Catálogo</a>
-                        </Link>
-                        <Link href="#">
-                            <a aria-label="Sobre Nós">Sobre nós</a>
-                        </Link>
-                    </div>
-                    
-                </div>
-                <div className={styles.footerItem}>
                     <strong>Endereço</strong>
                     <div>
-                        <p>Rua Marechal Deodoro</p>
-                        <p>Nº 160</p>
+                        <p>Rua Marechal Deodoro, Nº 160</p>
                         <p>Centro, Niterói</p>
                     </div>
                 </div>
+
+                <div className={styles.footerItem}>
+                    <strong>Horário de Funcionamento</strong>
+                    <div className={styles.columnDirDiv}>
+                        <p><strong>Seg. a Sex.:</strong> 08:00 às 19:00</p>
+                        <p><strong>Sábados:</strong> 08:00 às 13:00</p>
+                        <p><strong>Feriados:</strong> consultar em nosso Instagram ou WhatsApp</p>
+                    </div>
+                </div>
+
                 <div  className={styles.footerItem}>
                     <strong>Contato</strong>
                     <div className={styles.footerMenu}>

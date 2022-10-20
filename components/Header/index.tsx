@@ -19,12 +19,12 @@ export default function Header() {
                 </li>
                 <li className={styles.mainMenuItem}>
                     <Link href="#">
-                        <a aria-label="Catálogo">Catálogo</a>
+                        <a aria-label="Sobre nós">Sobre nós</a>
                     </Link>
                 </li>
                 <li className={styles.mainMenuItem}>
-                    <Link href="#">
-                        <a aria-label="Sobre nós">Sobre nós</a>
+                    <Link href="/contato">
+                        <a aria-label="Contato">Contato</a>
                     </Link>
                 </li>
             </ul>
